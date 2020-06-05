@@ -40,3 +40,68 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const links = document.querySelectorAll("a");
+links[0].textContent = siteContent ["nav"]["nav-item-1"];
+links[1].textContent = siteContent ["nav"]["nav-item-2"];
+links[2].textContent = siteContent ["nav"]["nav-item-3"];
+links[3].textContent = siteContent ["nav"]["nav-item-4"];
+links[4].textContent = siteContent ["nav"]["nav-item-5"];
+links[5].textContent = siteContent ["nav"]["nav-item-6"];
+
+// new nav
+let newLink = document.createElement("a");
+let mainNav =document.querySelector("nav")
+newLink.innerText = "Reviews"
+mainNav.prepend(newLink)
+newLink.style.color = "teal"
+newLink.style.fontSize ='1.2rem'
+
+let newLink2 =document.createElement("a")
+let mainNav2 =document.querySelector("nav")
+newLink2.innerText = "Info"
+mainNav2.append(newLink2)
+newLink2.style.color = "teal"
+newLink2.style.fontSize ='1.2rem'
+
+
+
+
+links.forEach(function (element) {
+  element.style.color = "teal"
+  element.style.fontSize ='1.2rem'
+})
+
+
+
+const head = document.querySelector("h1");
+head.textContent =siteContent["cta"]["h1"];
+let button = document.querySelector("button")
+button.textContent = siteContent ["cta"]["button"];
+const headimg = document.getElementById("cta-img");
+headimg.setAttribute('src', siteContent["cta"][ "img-src"]);
+
+let hfour = document.querySelectorAll("h4");
+hfour[0] .textContent = siteContent["main-content"]["features-h4"];
+hfour[1] .textContent = siteContent["main-content"]["about-h4"];
+hfour[2] .textContent = siteContent["main-content"] ["services-h4"];
+hfour[3] .textContent = siteContent["main-content"]["product-h4"];
+hfour[4] .textContent = siteContent["main-content"] ["vision-h4"];
+hfour[5] .textContent =siteContent ["contact"] ["contact-h4"];
+let midimg =document .getElementById("middle-img");
+midimg .setAttribute('src', siteContent ["main-content"]["middle-img-src"]);
+
+const para =document .querySelectorAll("p");
+para[0] .textContent =siteContent ["main-content"]["features-content"];
+para[1] .textContent =siteContent ["main-content"]["about-content"];
+para[2] .textContent =siteContent ["main-content"]["services-content"];
+para[3] .textContent =siteContent ["main-content"] ["product-content"];
+para[4] .textContent =siteContent ["main-content"] ["vision-content"];
+para[5] .textContent =siteContent ["contact"] ["address"];
+para[6] .textContent =siteContent ["contact"] ["phone"];
+para[7] .textContent =siteContent ["contact"] ["email"];
+para[8] .textContent =siteContent ["footer"] ["copyright"]
+
+
+
+
